@@ -89,7 +89,7 @@ def get_age() :
     this function calls the function called valid_int, to get users' age and check if that is correct and saves it and returns it.
     '''
 
-    user_age = valid_int
+    user_age = valid_int()
     return user_age
 
 def get_gender() :
@@ -355,7 +355,7 @@ def options() :
     print("Press 5 to change your height")
     print("Press 6 to change your weight")
 
-    option = valid_int(max_value = 0, max_value = 6)
+    option = valid_int(min_value = 0, max_value = 6)
 
     return option
 
